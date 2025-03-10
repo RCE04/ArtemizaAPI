@@ -24,16 +24,15 @@ builder.Services.AddSwaggerGen();
 // Habilitar CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
-        policy =>
-        {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-        });
+    options.AddPolicy("AllowAll", builder =>
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
 });
 
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 
 // Configurar middleware y pipeline de la aplicación
 if (app.Environment.IsDevelopment())
