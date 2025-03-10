@@ -44,6 +44,14 @@ public partial class AppDbContext : DbContext
                 .HasColumnType("character varying")
                 .HasColumnName("precio");
             entity.Property(e => e.Vendido).HasColumnName("vendido");
+
+            entity.Property(e => e.Ancho) // Nueva propiedad
+           .HasColumnType("character varying")
+           .HasColumnName("ancho");
+
+            entity.Property(e => e.Alto) // Nueva propiedad
+                .HasColumnType("character varying")
+                .HasColumnName("alto");
         });
 
         OnModelCreatingPartial(modelBuilder);

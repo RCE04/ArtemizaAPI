@@ -244,3 +244,4 @@ C:\Users\Rodri\source\repos\API2\API2\obj\Debug\net8.0\API2.genruntimeconfig.cac
 C:\Users\Rodri\source\repos\API2\API2\obj\Debug\net8.0\ref\API2.dll
 C:\Users\Rodri\source\repos\API2\API2\bin\Debug\net8.0\CloudinaryDotNet.dll
 C:\Users\Rodri\source\repos\API2\API2\obj\Debug\net8.0\API2.sourcelink.json
+C:\Users\Rodri\source\repos\API2\API2\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

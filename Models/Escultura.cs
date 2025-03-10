@@ -9,11 +9,15 @@ public partial class Escultura
 
     public string NombreEscultura { get; set; } = null!;
 
-    public string Precio { get; set; } = null!;
+    public string Precio { get; set; }
 
     public bool Vendido { get; set; }
 
     public string? Historia { get; set; }
 
     public string Imagen { get; set; } = null!;
+
+    public string Ancho { get; set; }
+
+    public string Alto { get; set; } 
 }
